@@ -1,23 +1,24 @@
 #!/usr/bin/python
-#
+'''
 ###################################################################
-# Simple Python implementation for SOLIDserver REST client
-# Version: 1.0.0
-#
-# Examples:
-# - using simple parameter format
-#   eiprest.py --server 10.0.99.99 dns_server_info dns_id=3
-# - using json parameter format
-#   eiprest.py --server 10.0.99.99 dns_server_info '{"dns_id":3}'
-# - using as python module in another script
-#   from eiprest import EipRest
-#   rest = EipRest(host='10.0.99.99', user='ipmadmin', password='admin', debug=True)
-#   params = {'dns_id': 3}
-#   rest.query('GET', 'dns_server_info',  params)
-#   rest.show_result()
-#
-# Run eiprest.py -h to see more options.
+ Simple Python implementation for SOLIDserver REST client
+ Version: 1.0.0
+
+ Examples:
+ - using simple parameter format
+   eiprest.py --server 10.0.99.99 dns_server_info dns_id=3
+ - using json parameter format
+   eiprest.py --server 10.0.99.99 dns_server_info '{"dns_id":3}'
+ - using as python module in another script
+   from eiprest import EipRest
+   rest = EipRest(host='10.0.99.99', user='ipmadmin', password='admin', debug=True)
+   params = {'dns_id': 3}
+   rest.query('GET', 'dns_server_info',  params)
+   rest.show_result()
+
+ Run eiprest.py -h to see more options.
 ####################################################################
+'''
 
 import sys
 import argparse
